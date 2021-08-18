@@ -6,6 +6,7 @@
     <div class="note" *ngFor="let note of notes">
       <h4>{{note.title}}</h4>
       <span>{{note.desc}}</span>
+      <button (click)="deleteNote(note.id)">Delete</button>
     </div>
     <div class="note">
       <form #addNoteForm="ngForm">
